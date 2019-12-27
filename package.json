@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node script.js",
     "test": "eslint .",
     "prettier": "prettier --config .prettierrc.json --write *.js"
   },
