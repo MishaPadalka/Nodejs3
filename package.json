@@ -5,9 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "eslint .",
-    "prettier": "prettier --config .prettierrc.json --write *.js",
-    "precommit": "npm run prettier",
-    "prepush": "npm run test"
+    "prettier": "prettier --config .prettierrc.json --write *.js"
   },
   "author": "",
   "license": "ISC",
@@ -17,5 +15,11 @@
   },
   "devDependencies": {
     "prettier": "^1.19.1"
-  }
+  },
+  "husky": {
+    "hooks": {
+      "precommit": "npm run prettier",
+      "prepush": "npm run test"
+    }
+}
 }
