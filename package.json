@@ -18,8 +18,8 @@
   },
   "husky": {
     "hooks": {
-      "precommit": "npm run prettier",
-      "prepush": "npm run test"
+      "pre-commit": "npm run prettier",
+      "pre-push": "npm run test"
     }
 }
 }
