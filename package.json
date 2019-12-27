@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "eslint .",
+    "lint": "eslint --ignore-path .gitignore .",
+    "test": "npm run lint",
     "prettier": "prettier --config .prettierrc.json --write *.js"
   },
   "author": "",
